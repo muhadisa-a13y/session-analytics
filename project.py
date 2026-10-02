@@ -94,7 +94,7 @@ with st.form("prediction_form"):
 
     submitted = st.form_submit_button("Predict")
 
-    if
+    if submitted:
         # Encode input using stored label encoders
         input_dict = {
             "StudentLevel": label_encoders["StudentLevel"].transform([student_level])[0],
